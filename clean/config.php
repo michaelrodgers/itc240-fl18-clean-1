@@ -16,6 +16,12 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
 //die;
 
+$title = THIS_PAGE;
+$siteHeading = 'Site Name';
+$slogan = 'Slogan';
+$pageHeading = 'Page Header';
+$subheading = 'Sub Header';
+
 switch(THIS_PAGE){
 	
 	case 'template.php':
