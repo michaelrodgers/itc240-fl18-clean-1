@@ -26,14 +26,26 @@ switch(THIS_PAGE){
 	
 	case 'template.php':
 		$title =  'My template page';
+		$pageHeading = 'Page Header';
+		$subheading = 'Sub Header';
+	break;
+		
+	case 'daily.php':
+		$title =  'My daily page';
+		$pageHeading = 'Page Header';
+		$subheading = 'Sub Header';
 	break;
 	
 	case 'contact.php':
 		$title =  'My contact page';
+		$pageHeading = 'Page Header';
+		$subheading = 'Sub Header';
 	break;
 	
 	default:
 		$title = THIS_PAGE;
+		$pageHeading = 'Page Header';
+		$subheading = 'Sub Header';
 	
 	
 }
