@@ -59,8 +59,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1><?=$site-heading?></h1>
+              <span class="subheading"><?=$slogan?></span>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
         <div class="page-heading">
-              <h1>Page Heading Goes Here!</h1>
-              <span class="subheading">Clever comment here!</span>
+              <h1><?=$page-heading?></h1>
+              <span class="subheading"><?=$subheading?></span>
         </div>
           <!-- header ends here -->
