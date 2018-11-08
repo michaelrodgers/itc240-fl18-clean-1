@@ -1,17 +1,28 @@
-<?php include 'config.php'?>
 <?php
     
-    if(isset($_GET['day'])
-    {
-        $day = $_GET['day'];
-    }else{
-        $day = date('l');
-    }
+/*
+if day is passed via GET, show $day's coffee
+if it's today, shows $today's coffee
+place a link to show today's coffee (if on another day)
+*/
     
-?>
+if(isset($_GET['day']))
+{//if day is passed via GET, show $day's coffee
+    $today = $_GET['day'];
+}else{//if it's today, shows $today's coffee
+   $today = date('l'); 
+}    
+    
+//$today = date('l');    
+ 
+//echo $today;
+//die;
+    
+    
+?>    
 <?php include 'header.php'?>
+<p><?=$today?>'s special is Pumpkin Spice!</p>
 
-<p><?=$day?>'s special is ...</p> 
 <p>Click below to find out our other specials: </p>
 <p><a href="daily.php?day=Sunday">Sunday</a></p>
 <p><a href="daily.php?day=Monday">Monday</a></p>
@@ -19,6 +30,7 @@
 <p><a href="daily.php?day=Wednesday">Wednesday</a></p>
 <p><a href="daily.php?day=Thursday">Thursday</a></p>
 <p><a href="daily.php?day=Friday">Friday</a></p>
-<p><a href="daily.php?day=Satday">Satday</a></p>
+<p><a href="daily.php?day=Saturday">Saturday</a></p>
+
 
 <?php include 'footer.php'?>
